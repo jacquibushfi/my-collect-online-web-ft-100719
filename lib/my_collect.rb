@@ -1,11 +1,11 @@
 def my_collect(array)
   i = 0
-  students = []
+  collection = []
   while i < array.length
-    students << yield(array[i])
+    collection << yield(array[i])
     i += 1
   end
-  students
+  collection
 end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
